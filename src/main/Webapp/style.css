@@ -1,0 +1,264 @@
+@charset "ISO-8859-1";
+/* Reset some default styling */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffd645; /* Warm Yellow */
+}
+
+header {
+    background-color: #3D2022;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Georgia', serif; /* Changed to Georgia font */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Light Yellow */
+}
+
+.login-btns {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn, .buddy-login-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+#hire-buddy {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 2s ease;
+}
+/* Add these styles to your existing CSS */
+
+#our-services {
+    background-color: #3D2022;
+    color: white;
+    padding: 40px;
+    margin-top: 20px;
+}
+/* Add these styles to your existing CSS */
+
+#image-gallery {
+    background-color:#ffd645 ;
+    color: white;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+
+#image-gallery h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #3D2022; /* Change the color as desired */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 30%; /* Adjust the width based on your design */
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    #image-gallery {
+        padding: 20px;
+    }
+
+    #image-gallery h2 {
+        font-size: 28px;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+#our-services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #our-services {
+        padding: 20px;
+    }
+
+    #our-services h2 {
+        font-size: 28px;
+    }
+
+    .service-item h3 {
+        font-size: 22px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+}
+
+.carousel-item {
+    width: 100%;
+    background-color: #333; /* Dark Gray */
+    color: white;
+}
+
+footer {
+    background-color: #3D2022;
+    color: #2C3227;
+    padding: 20px;
+}
+
+/* Contact form styling */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffd645; /* Deep Purple */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff4577; /* Rich Pink */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Dark Gray */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .login-btns {
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .carousel-container {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        white-space: nowrap;
+    }
+
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 80%; /* Adjust based on your design */
+        margin-right: 10px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+    .slogan {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #ffd645; /* An attractive color, you can change this based on your preference */
+    margin-left: 10px; /* Add margin for spacing */
+    font-weight: bold; /* Make the slogan bold for emphasis */
+}
+}
+
